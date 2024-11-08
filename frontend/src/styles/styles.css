@@ -1,0 +1,140 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+}
+body {
+  background: #404050;
+  color: #b8b8b8;
+}
+
+.app-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  background: #505060;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pseudo-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  background: #404050;
+}
+
+.newItemForm-container {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  background: #404050;
+}
+
+.thread-container {
+  background: #404050;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.item-card {
+  position: relative;
+  background: #505060;
+  overflow: hidden;
+  width: 25%;
+  margin: 15px;
+  text-align: center;
+  padding: 7px;
+  padding-bottom: 20px;
+  border: 1px solid #b8b8b8;
+}
+
+.like-icon {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+#like-btn {
+  color: #98ed98;
+  cursor: pointer;
+}
+#unlike-btn {
+  color: #c5c5c5;
+  cursor: pointer;
+}
+
+.card-icons-container {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+#update-btn,
+.delete-btn {
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  display: inline-block;
+}
+#update-btn:hover,
+.delete-btn:hover {
+  transform: rotate(25deg);
+}
+
+#edit-btn {
+  margin: 5px;
+  color: #c5c5c5;
+  background: #505060;
+  font-weight: bolder;
+  border: 2px solid #c5c5c5;
+  padding: 3px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#edit-btn:hover {
+  color: #505060;
+  background: #c5c5c5;
+  border: 2px solid #505060;
+}
+
+input {
+  height: 30px;
+  border-radius: 5px;
+  background: #404050;
+  color: #fff;
+  font-size: large;
+  text-align: center;
+  border: none;
+}
+
+textarea {
+  width: 70%;
+  min-height: 80px;
+  background: #505060;
+  color: #fff;
+  font-size: large;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background: #505060;
+  color: #fff;
+  height: 55px;
+  font-weight: bolder;
+  border: 1px solid #b8b8b8;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+  background: #b8b8b8;
+  color: #505060;
+}
